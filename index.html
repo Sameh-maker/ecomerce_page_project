@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E-Commerce Product Page</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <div class="menu">
+            <img src="./images/icon-menu.svg" alt="not-found">
+        </div>
+        <div class="header-left">
+            <a href="" class="logo-link">
+                <img src="./images/logo.svg" class="logo" alt="not-found">
+            </a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="">Collections</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="cart-btn" aria-label="Cart">
+                <span class="products-number">0</span>
+                <img src="./images/icon-cart.svg" alt="">
+            </div>
+            <div class="profile-avatar">
+                <img src="./images/image-avatar.png" alt="not found">
+            </div>
+        </div>
+        <div class="cart">
+            <header class="cart-header">
+                <h2>cart</h2>
+            </header>
+            <section class="cart-section">
+                <h2 class="cart-empty">Your cart is empty.</h2>
+            </section>
+        </div>
+    </header>
+    <!-- main -->
+    <main class="product-container">
+        <section class="product-gallery" aria-label="Product Images">
+            <div class="main-image">
+                <div class="previous-btn-mob">
+                    <img src="./images/icon-previous.svg" alt="not-found">
+                </div>
+                <div class="next-btn-mob">
+                    <img src="./images/icon-next.svg" alt="not-found">
+                </div>
+                <img src="./images/image-product-1.jpg" class="img" alt="Fall Limited Edition Sneakers - main view"
+                    id="current-large-image">
+            </div>
+
+            <div class="thumbnail-list">
+                <div class="thumbnail-btn" aria-label="View product image 1"
+                    data-large-src="./images/image-product-1.jpg">
+                    <img src=" ./images/image-product-1-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 2"
+                    data-large-src="./images/image-product-2.jpg">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 3"
+                    data-large-src="./images/image-product-3.jpg">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 4"
+                    data-large-src="./images/image-product-4.jpg">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="not-found">
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details" aria-label="Product Details">
+            <span class="company-tag">Sneaker Company</span>
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+
+            <p class="product-description">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                sole, they'll withstand everything the weather can offer.
+            </p>
+
+            <div class="price-container">
+                <div class="current-price-row">
+                    <span class="current-price">$125.00</span>
+                    <span class="discount-badge">50%</span>
+                </div>
+                <span class="original-price">$250.00</span>
+            </div>
+
+            <div class="purchase-controls">
+                <div class="quantity-selector">
+                    <button type="button" class="qty-btn-dec" aria-label="Decrease quantity">-</button>
+                    <span class="qty-number">0</span>
+                    <button type="button" class="qty-btn-inc" aria-label="Increase quantity">+</button>
+                </div>
+                <button type="button" class="add-to-cart-btn">
+                    <img src="./images/icon-cart.svg" alt="" aria-hidden="true">
+                    Add to cart
+                </button>
+            </div>
+            <p class="availability">maximum limit for purchase in discount</p>
+
+        </section>
+    </main>
+    <!-- this is for side bar -->
+    <div class="side-bar">
+        <div class="close-btn">
+            <img src="./images/icon-close.svg" alt="not-found">
+        </div>
+        <nav class="nav-links-mob">
+            <ul>
+                <li><a href="">Collections</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- this is for lightBox -->
+    <div class="modal">
+        <div class="lightBox-gallery">
+            <div class="previous-btn">
+                <img src="./images/icon-previous.svg" alt="not-found">
+            </div>
+            <div class="next-btn">
+                <img src="./images/icon-next.svg" alt="not-found">
+            </div>
+            <div class="shown-img">
+                <img src="./images/image-product-1.jpg" alt="not-found">
+            </div>
+            <div class="thumbnail-list-lightBox">
+                <div class="thumbnail-btn" aria-label="View product image 1"
+                    data-large-src="./images/image-product-1.jpg">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 2"
+                    data-large-src="./images/image-product-2.jpg">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 3"
+                    data-large-src="./images/image-product-3.jpg">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="thumbnail-btn" aria-label="View product image 4"
+                    data-large-src="./images/image-product-4.jpg">
+                    <img src=" ./images/image-product-4-thumbnail.jpg" alt="not-found">
+                </div>
+                <div class="close-btn-lightBox">
+                    <img src="./images/icon-close.svg" alt="not-found">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recipt">
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
